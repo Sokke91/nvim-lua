@@ -29,14 +29,38 @@ return packer.startup(function(use)
  
   use 'nvim-lua/plenary.nvim'
   use 'bluz71/vim-nightfly-guicolors'
+  
   use 'christoomey/vim-tmux-navigator'
+  
+  -- Comment 
   use "numToStr/Comment.nvim"
 
+  -- Fancy Tree
   use 'nvim-tree/nvim-tree.lua'
+
+  -- nice Icons
   use("kyazdani42/nvim-web-devicons")
 
-  use{"nvim-lualine/lualine.nvim",
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+  -- cozy status bar
+  use("nvim-lualine/lualine.nvim")
+
+  -- usefull stuff
+  use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
+	use("vim-scripts/ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+  
+  -- telescope
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+  
+  use("hrsh7th/nvim-cmp") -- completion plugin
+	use("hrsh7th/cmp-buffer") -- source for text in buffer
+	use("hrsh7th/cmp-path") -- source for file system paths
+
+	-- snippets
+	use("L3MON4D3/LuaSnip") -- snippet engine
+	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
+	use("rafamadriz/friendly-snippets") -- useful snippets
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

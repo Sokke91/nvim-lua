@@ -6,3 +6,5 @@ require("jonas.core.colorscheme")
 require("jonas.plugins.comment")
 require("jonas.plugins.nvim-tree")
 require("jonas.plugins.lualine")
+
+require("jonas.plugins.telescope")
