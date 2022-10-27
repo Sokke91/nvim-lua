@@ -8,3 +8,4 @@ require("jonas.plugins.nvim-tree")
 require("jonas.plugins.lualine")
 
 require("jonas.plugins.telescope")
+require("jonas.plugins.nvim-cmp")
