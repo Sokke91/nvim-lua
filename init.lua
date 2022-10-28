@@ -9,3 +9,7 @@ require("jonas.plugins.lualine")
 
 require("jonas.plugins.telescope")
 require("jonas.plugins.nvim-cmp")
+require("jonas.plugins.lsp.mason")
+
+require("jonas.plugins.lsp.lspsaga")
+require("jonas.plugins.lsp.lspconfig")
