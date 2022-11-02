@@ -13,3 +13,8 @@ require("jonas.plugins.lsp.mason")
 
 require("jonas.plugins.lsp.lspsaga")
 require("jonas.plugins.lsp.lspconfig")
+
+require("jonas.plugins.lsp.null-ls")
+
+require("jonas.plugins.autopairs")
+require("jonas.plugins.treesitter")
