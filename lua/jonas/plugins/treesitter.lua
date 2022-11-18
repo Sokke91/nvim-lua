@@ -19,8 +19,9 @@ treesitter.setup({
 		"json",
 		"javascript",
 		"typescript",
-		"vue",
 		"tsx",
+		"vue",
+		"lua",
 		"yaml",
 		"html",
 		"css",
@@ -28,7 +29,6 @@ treesitter.setup({
 		"svelte",
 		"graphql",
 		"bash",
-		"lua",
 		"vim",
 		"dockerfile",
 		"gitignore",
@@ -36,3 +36,5 @@ treesitter.setup({
 	-- auto install above language parsers
 	auto_install = true,
 })
+local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }

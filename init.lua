@@ -17,5 +17,5 @@ require("jonas.plugins.lsp.lspconfig")
 require("jonas.plugins.lsp.null-ls")
 
 require("jonas.plugins.autopairs")
--- require("jonas.plugins.treesitter")
+require("jonas.plugins.treesitter")
 require("jonas.plugins.git")
