@@ -86,6 +86,34 @@ lspconfig["volar"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["gopls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	settings = {
+		-- https://go.googlesource.com/vscode-go/+/HEAD/docs/settings.md#settings-for
+		gopls = {
+			analyses = {
+				nilness = true,
+				unusedparams = true,
+				unusedwrite = true,
+				useany = true,
+			},
+			experimentalPostfixCompletions = true,
+			gofumpt = true,
+			staticcheck = true,
+			usePlaceholders = true,
+			hints = {
+				assignVariableTypes = true,
+				compositeLiteralFields = true,
+				compositeLiteralTypes = true,
+				constantValues = true,
+				functionTypeParameters = true,
+				parameterNames = true,
+				rangeVariableTypes = true,
+			},
+		},
+	},
+})
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,
