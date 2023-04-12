@@ -81,6 +81,7 @@ lspconfig["tailwindcss"].setup({
 	on_attach = on_attach,
 })
 
+-- configure Vues server
 lspconfig["volar"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
