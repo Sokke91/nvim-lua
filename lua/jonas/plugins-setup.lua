@@ -30,6 +30,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Helper Plugin
 
 	use("bluz71/vim-nightfly-guicolors")
+	use("rebelot/kanagawa.nvim")
 
 	use("christoomey/vim-tmux-navigator") -- Helper Pluging for working with tmux
 
