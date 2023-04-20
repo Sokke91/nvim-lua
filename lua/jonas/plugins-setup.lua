@@ -28,9 +28,10 @@ return packer.startup(function(use)
 	-- My plugins here
 
 	use("nvim-lua/plenary.nvim") -- Helper Plugin
-
+	-- colorschemes
 	use("bluz71/vim-nightfly-guicolors")
 	use("rebelot/kanagawa.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	use("christoomey/vim-tmux-navigator") -- Helper Pluging for working with tmux
 

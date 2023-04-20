@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/jonasangel/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/jonasangel/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/jonasangel/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jonasangel/.local/share/nvim/site/pack/packer/start/git.nvim",
     url = "https://github.com/dinhhuy258/git.nvim"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/jonasangel/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
